@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{C1D948B6-C8FC-4BBC-B980-5DC5599C9C85}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnUnusedVariables="true" WarnShape="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<Filter Name="Geom">
+		<File RelativePath=".\Geom\cpts1_p3.txt"/>
+		<File RelativePath=".\Geom\cpts2_p3.txt"/>
+		<File RelativePath=".\Geom\knots1_p3.txt"/>
+		<File RelativePath=".\Geom\knots2_p3.txt"/></Filter></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="Basis">
+		<File RelativePath=".\Basis\Allinterfaces.f90"/>
+		<File RelativePath=".\Basis\GaussPointsWeightFactors.f90"/>
+		<File RelativePath=".\Basis\GeomPara.f90"/>
+		<File RelativePath=".\Basis\GetVN.f90"/></Filter>
+		<Filter Name="IGABEM">
+		<File RelativePath=".\IGABEM\collpoint.f90"/>
+		<File RelativePath=".\IGABEM\CompuCpts.f90"/>
+		<File RelativePath=".\IGABEM\GeHe1.f90"/>
+		<File RelativePath=".\IGABEM\GeHe2.f90"/>
+		<File RelativePath=".\IGABEM\Jumpterms.f90"/>
+		<File RelativePath=".\IGABEM\Laplace2D.f90"/>
+		<File RelativePath=".\IGABEM\logical_loc.f90"/>
+		<File RelativePath=".\IGABEM\NonSingElem2.f90"/>
+		<File RelativePath=".\IGABEM\OutwardNormal.f90"/>
+		<File RelativePath=".\IGABEM\Shell_nrbasis.f90"/>
+		<File RelativePath=".\IGABEM\SingElem2.f90"/></Filter>
+		<Filter Name="NURBS">
+		<File RelativePath=".\NURBS\BasisFuns.f90"/>
+		<File RelativePath=".\NURBS\bsbasis.f90"/>
+		<File RelativePath=".\NURBS\Ders1bsbasis.f90"/>
+		<File RelativePath=".\NURBS\Ders1nrbasis.f90"/>
+		<File RelativePath=".\NURBS\DersBasisFuns.f90"/>
+		<File RelativePath=".\NURBS\FindSpan.f90"/>
+		<File RelativePath=".\NURBS\nrbasis.f90"/>
+		<File RelativePath=".\NURBS\pcoors.f90"/>
+		<File RelativePath=".\NURBS\RXicpts.f90"/>
+		<File RelativePath=".\NURBS\UniqueKnots.f90"/></Filter>
+		<Filter Name="TimeStepping">
+		<File RelativePath=".\TimeStepping\GeomUpdate.f90"/>
+		<File RelativePath=".\TimeStepping\PartialTerms.f90"/></Filter>
+		<File RelativePath=".\Sloshing.f90"/></Filter>
+		<File RelativePath=".\ReadMe.txt"/></Files>
+	<Globals/></VisualStudioProject>
